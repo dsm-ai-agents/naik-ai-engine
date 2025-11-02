@@ -31,12 +31,14 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-poppins font-semibold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              Start Building Your AI Agent
-              <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-poppins font-semibold text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <a href="/ai-agents">
+                Start Building Your AI Agent
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-poppins font-semibold text-lg px-8 py-6 rounded-xl transition-all">
-              Book a Discovery Call
+            <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-poppins font-semibold text-lg px-8 py-6 rounded-xl transition-all">
+              <a href="/contact">Book a Discovery Call</a>
             </Button>
           </div>
         </div>
